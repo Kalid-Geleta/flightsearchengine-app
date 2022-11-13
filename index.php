@@ -1,7 +1,13 @@
 <?php
 session_start();
+if(isset($_POST['logout'])){
+    setcookie('id',"t001",time()-3600);
+    setcookie('status',"t002",time()-3600);
+    $_SESSION=array();
+    session_destroy();
+}
    
-    if(isset($_COOKIE['id'])){
+  else if(isset($_COOKIE['id'])){
         
         if($_COOKIE['status']==1){
 
@@ -14,14 +20,14 @@ session_start();
         }
     
     }
-    else{
-        if(isset($_POST['btn_click'])){
+    else if(isset($_POST['btn_click'])){
             $va=$_POST['btn_click'];
            $_SESSION['btn_click']=$va;
         
          echo "<script src='popup.js'></script>";
+    
     }
-}
+
 
 
 ?>
@@ -36,31 +42,30 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <title>Document</title> 
+    <title>KFLY</title> 
 </head>
 <body>
 
     <div class="viewcontain">
         <div class="viewcontain1">
-            <h4>TAKEOFF</h4>
+        <h4>KFLYSEARCH</h4>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="signuplogin.html">Login/Signup</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+             
             </ul>
 
         </div>
     </div>
     <diV class="viewcontain2">
         <div class="location">
-            <label>Where:</label>
+            <label>From:</label>
             <div id="c1">
             
             </div>
         </div>
         <div class="location">
-            <label>Where:</label>
+            <label>To:</label>
             <div id="c2">
            
         </div>
@@ -127,7 +132,7 @@ session_start();
     <div class="footer">
 <div class="insidefooter">
 <div class="hg">
-    <h3>Take Off Travel Agency
+    <h3>Kflysearch Travel 
     </h3>
     <p>Offering you the best holiday Deals for your Family and Loved Ones.</p>
 
@@ -135,11 +140,11 @@ session_start();
 <div class="hg">
     <h3>Contact Information</h3>
     
-<li>Woodvale Avenue,</li>
+<li>madaraka ,Avenue</li>
 <li>Nairobi Kenya</li>
-<li>+254 735 355 988</li>
-<li>takeoff@gmail.com</li>
-<li>Takeoff.com</li>
+<li>+254707093963</li>
+<li>kalidgeleta28@gmail.com</li>
+<li>kflysearch.cf</li>
     
 
 

@@ -23,7 +23,8 @@ ul li{
 .viewcontain{
      height:700px;
      width:100%;
-     background-color: rgb(197, 25, 25);
+     background:url('images/travel-to-thailand-as-family.jpg') no-repeat;
+     background-size: cover;
 }
 .viewcontain2{
     height:250px;
@@ -87,7 +88,7 @@ label{
     outline: none;
 border:1px solid #484a57;
 padding:20px ;
-width:100%;
+width:50%;
 
 }
 #od3{
@@ -95,7 +96,7 @@ width:100%;
     outline: none;
     border:1px solid #484a57;
     padding:19px ;
-    width:100%;
+    width:50%;
     
 }
 #od4{
@@ -103,14 +104,14 @@ width:100%;
     outline: none;
     border:1px solid #484a57;
     padding:19px ;
-    width:100%;
+    width:50%;
 }
 #od5{
     background-color: #333544;
     outline: none;
     border:1px solid #484a57;
     padding:20px ;
-    width:100%;
+    width:50%;
 }
 #od6{
     background-color:#ffdd00;
@@ -118,6 +119,7 @@ width:100%;
     height:40px;
     border: none;
     border-radius:20px;
+    width: 50%;
 }
 
 .viewcontain2 label{
@@ -155,6 +157,12 @@ width:100%;
 .inininclass{
     width:70%;
     border-right: 1px solid #c0cad5;
+    display:flex;
+    flex-direction: column;
+}
+.inininclass2{
+    width:100%;
+ 
     display:flex;
     flex-direction: column;
 }
@@ -290,7 +298,7 @@ justify-content: right;
 }
 ul a{
 text-decoration: none;
-color:#b5c3cd ;
+color:#f5f8fa ;
 }
 
 .viewcontain3{
@@ -390,10 +398,10 @@ color:#b5c3cd ;
     margin:none;
 }
 #contain2{
-   
+   margin-top:50px;
     position: relative;
      background-color: white;
-     width: 80%;
+     width: 60%;
    
      
      left:50%;
@@ -401,5 +409,58 @@ color:#b5c3cd ;
     
     
    
+ }
+ #contain3{
+   
+    position: relative;
+     
+     width: 54%;
+   border-radius:10px;
+     height: 20vw;
+     left:50%;
+     transform:translateX(-50%);
+    
+     border: 1px solid #c0cad5;
+     display: flex;
+     flex-direction: column;
      
  }
+ .cc31{
+height: 80%;
+display:flex;
+ }
+ .cc32{
+    border-top:1px solid #c0cad5;
+    height:20%;
+   
+ }
+ .cc311{
+width:50%;
+border-right:1px solid #c0cad5 ;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+ }
+ .cc32{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ #ky{
+    margin: 10px;
+    padding:10px;
+ }
+ .cost{
+    font-size: larger;
+  }
+  .cc3311{
+    height:100%;
+
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: initial;
+
+  }

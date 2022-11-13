@@ -333,7 +333,7 @@ compiled+=`
             </div>
             <div>
                 <span>Arives</span>
-                <span>Wednesday Decmember 14</span>
+                <span>${e['itineraries'][0]['segments'][(e['itineraries'][0]['segments']).length-1]['arrival']['at'].split("T")[0]}</span>
                 </div>
 
 
@@ -343,7 +343,7 @@ compiled+=`
         <div class="segementsandtime">
             <img src="plane.png" width="40px" height="40px">
             <div class="timeandiata">
-                <span>3:05pm</span>
+                <span>${e['itineraries'][0]['segments'][0]['departure']['at'].split("T")[1]}</span>
                 <span>${ e['itineraries'][0]['segments'][0]['departure']['iataCode']}</span>
                 
             </div>
@@ -357,7 +357,7 @@ compiled+=`
             
         </div>
         <div class="timeandiata">
-            <span>3:05pm</span>
+            <span>${e['itineraries'][0]['segments'][(e['itineraries'][0]['segments']).length-1]['arrival']['at'].split("T")[0]}</span>
             <span>${ e['itineraries'][0]['segments'][e['itineraries'][0]['segments'].length-1]['arrival']['iataCode']}</span>
 
         </div>
